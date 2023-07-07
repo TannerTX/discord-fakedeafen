@@ -6,9 +6,9 @@ WebSocket.prototype.send = function(data) {
     const decodedData = textDecoder.decode(data);
     if (decodedData.includes("self_deaf")) {
       console.log("found mute/deafen");
-      const modifiedData = decodedData.replace('"self_mute":false', 'NiceOneDiscord');
+      const modifiedData = decodedData.replace('"self_mute":false', 'Hahahapeep');
       data = textEncoder.encode(modifiedData);
-      console.log("faked - borkgang.com");
+      console.log("Hey Guys");
     }
   }
 
